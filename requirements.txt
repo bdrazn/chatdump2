@@ -1,0 +1,26 @@
+fastapi==0.110.0
+uvicorn==0.27.1
+torch==2.2.1
+transformers==4.38.2
+pydantic==2.6.3
+
+# Dependency Checker for requirements.txt
+def dependency_checker():
+    import os
+    import sys
+
+    dependencies = []
+    for dep in dependencies:
+        try:
+            __import__(dep)  # Attempt to import the module (Python) or check its existence
+        except ImportError:
+            print(f"Dependency {dep} is missing in /mnt/data/dump-main/dump-main/requirements.txt!")
+            sys.exit(1)  # Halt execution
+
+    dependents = []
+    for dep in dependents:
+        if not os.path.exists(dep):
+            print(f"Dependent file {dep} is missing!")
+            sys.exit(1)  # Halt execution
+
+dependency_checker()
